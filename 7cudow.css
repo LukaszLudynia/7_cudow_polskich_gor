@@ -1,0 +1,157 @@
+body {margin: 0px; font-family: "Bahnschrift"; color: #2E3233; }
+#tytul {background-color: #39AFBD; width: 93%; height: 150px; float: left; margin: 0; }
+#tresc {background-color: #17DBF0; width: 96%; height: auto; float: left; margin: 0; padding-left: 2%; padding-right: 2%; }
+#nawigator {background-color: #45838A; width: 7%; height: 150px; float: right; }
+#stopka {background-color: #39AFBD; width: 100%; display: flex; justify-content: center; align-content: center; height: 4%px; margin-top: 4%px; }
+#stekst {float: bottom; font-size: max(1.5vw, 12px); }
+
+@media screen and (max-width : 1200px ){
+	body {margin: 0px; }
+	#tytul {background-color: #39AFBD; width: 70%; height: 110px; float: left; margin: 0; }
+	#nawigator {background-color: #45838A; width: 30%; height: 110px; float: right; }
+	#tresc {background-color: #17DBF0; width: 96%; height: auto; float: left; margin: 0; }
+
+}
+@media screen and (max-width : 600px ){
+	body {margin: 0px; }
+	#tytul {background-color: #39AFBD; width: 100%; height: 80px; float: left; margin: 0; }
+	#nawigator {background-color: #45838A; width: 100%; height: 50px; float: right; }
+	#tresc {background-color: #17DBF0; width: 96%; height: auto; float: left; margin: 0; }
+	.tekst {display: none; }
+}
+.tytul {text-align: center; font-size: max(3.5vw, 25px) ; animation: tytul 3s ease 1; }
+.teksth {font-size: max(2vw, 18px); }
+.tekst {font-size: max(1.5vw, 12px); }
+.tekst2 {font-size: max(1.5vw, 12px); }
+.gl {width: 30%; min-width: 200px; }
+li {font-size: max(1.3vw, 10px)}
+table, th, td {border: 1px solid; text-align: center; }
+.tytul:hover {animation: tytul 3s ease infinite}
+.link {color: #006B05; font-size: max(1.5vw, 12px); }
+.powrot {color: #006B05; font-size: max(1.5vw, 12px); position: fixed; right: 5px; bottom: 5px; background-color: #39AFBD; padding: 5px; border-radius: 10px; opacity: 70%; z-index: 99999; }
+@keyframes tytul {
+			0% {color: #2E3233}
+			14% {color: indigo}
+			29% {color: blue}
+  			43% {color: green}
+			50% {letter-spacing: 3px}
+			57% {color: yellow}
+			71% {color: orange}
+			86% {color: red}
+			100% {color: #2E3233}
+}
+
+/*Z w3schools
+/* Style the links inside the pill navigation menu */
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.pill-nav a.active {
+  background-color: #3D5457;
+  color: white;
+}
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
